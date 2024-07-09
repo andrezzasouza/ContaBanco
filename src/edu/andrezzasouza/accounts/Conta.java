@@ -1,3 +1,5 @@
+package edu.andrezzasouza.accounts;
+
 public class Conta {
   int numero;
   String agencia;
