@@ -1,4 +1,4 @@
-package edu.andrezzasouza.accounts;
+package edu.andrezzasouza.contas;
 import java.util.Scanner;
 
 public class ContaTerminal {

@@ -1,4 +1,4 @@
-package edu.andrezzasouza.accounts;
+package edu.andrezzasouza.contas;
 
 public class Conta {
   int numero;
