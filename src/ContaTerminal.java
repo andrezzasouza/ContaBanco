@@ -18,20 +18,10 @@ public class ContaTerminal {
     System.out.println("\nPor favor, digite o saldo e aperte 'ENTER' no seu teclado.");
     double saldo = scanner.nextDouble();
 
-    String numeroComoString = String.valueOf(numero);
-    String saldoComoString = String.valueOf(saldo);
-
-    String mensagemTerminal = "\nOlá ".concat(nomeCliente)
-        .concat(", obrigado por criar uma conta em nosso banco, sua agência é ")
-        .concat(agencia)
-        .concat(", conta ")
-        .concat(numeroComoString)
-        .concat(" e seu saldo ")
-        .concat(saldoComoString)
-        .concat(" já está disponível para saque.");
-
-    System.out.println(mensagemTerminal);
+    Conta conta = new Conta(numero, agencia, nomeCliente, saldo);
 
     scanner.close();
+
+    conta.criarConta();
   }
 }
